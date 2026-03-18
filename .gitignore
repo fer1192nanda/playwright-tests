@@ -1,6 +1,9 @@
 # Dependências
 node_modules/
-
+%USERPROFILE%/
+.npm/
+playwright-report/
+test-results/
 # Arquivos de ambiente
 .env
 .env.local
