@@ -25,3 +25,13 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+- name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          # Aqui fazemos a ponte: a variável do código recebe o Secret do GitHub
+          BASE_URL: ${{ secrets.BASE_URL }}
+          USER: ${{ secrets.USER }}
+          # Adicione outras aqui se houver
