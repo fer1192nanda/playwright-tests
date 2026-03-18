@@ -1,9 +1,14 @@
 
-# Playwright
-.env
+# Node modules
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+
+# Playwright reports
+playwright-report/
+test-results/
+blob-report/
+
+# Arquivos sensíveis
+.env
+
+# Build outputs
+dist/
