@@ -1,14 +1,17 @@
-
-# Node modules
+# Dependências
 node_modules/
 
-# Playwright reports
-playwright-report/
-test-results/
-blob-report/
-
-# Arquivos sensíveis
+# Arquivos de ambiente
 .env
+.env.local
 
-# Build outputs
+# Pastas de build
 dist/
+build/
+
+# Logs
+*.log
+
+# IDEs e OS
+.vscode/
+.DS_Store
