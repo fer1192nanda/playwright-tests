@@ -1,6 +1,4 @@
-# playwright-tests
-
-# 🧪 Projeto de Automação de Testes com Playwright
+# 🎭 Playwright Automation Project
 
 ## 📌 Sobre o projeto
 
