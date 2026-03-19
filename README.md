@@ -13,6 +13,7 @@ Os testes foram desenvolvidos com foco em boas práticas de QA, garantindo valid
 * Node.js
 * Playwright
 * JavaScript
+* TypeScript
 
 ---
 
