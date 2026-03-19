@@ -1,17 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/LoginPage';
 
-test('Login no portal', async ({ page }) => {
+test('Login válido', async ({ page }) => {
+  const loginPage = new LoginPage(page);
 
-  await page.goto(process.env.BASE_URL + '/login/auth');
+  await loginPage.acessar();
+  await loginPage.fazerLogin(process.env.USER, process.env.PASSWORD);
 
-  await page.getByRole('textbox', { name: 'Usuário' })
-    .fill(process.env.USER);
-
-  await page.getByRole('textbox', { name: 'Senha' })
-    .fill(process.env.PASSWORD);
-
-  await page.getByRole('button', { name: 'Entrar' }).click();
-
-  await expect(page).not.toHaveURL(/login/);
-
+  // exemplo de validação
+  await expect(page).toHaveURL(/minha-conta/);
 });
