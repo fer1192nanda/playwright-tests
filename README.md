@@ -23,7 +23,7 @@ Os testes foram desenvolvidos com foco em boas práticas de QA, garantindo valid
 📁 tests
  ┣ 📄 login.spec.js
 
-  ┣ 📄  LoginPage.js
+ ┣ 📄 LoginPage.js
 
 
 ```
